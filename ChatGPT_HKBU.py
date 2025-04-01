@@ -2,7 +2,7 @@ import configparser
 import requests
 
 class HKBU_ChatGPT():
-    def  init (self,config_='./config.ini'): 
+    def __init__(self,config_='./config.ini'): 
         if type(config_) == str:
             self.config = configparser.ConfigParser()
             self.config.read(config_)
@@ -23,7 +23,7 @@ class HKBU_ChatGPT():
         else:
             return 'Error:', response
 
-if __name__ == ' main ':
+if __name__ == '__main__':
 	ChatGPT_test = HKBU_ChatGPT()
 	while True:
         	user_input = input("Typing anything to ChatGPT:\t") 

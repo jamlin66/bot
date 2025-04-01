@@ -71,5 +71,5 @@ def equiped_chatgpt(update, context):
 	context.bot.send_message(chat_id=update.effective_chat.id, text=reply_message)
 
 
-if __name__  == ' main ': 
+if __name__ == '__main__':
     main()
